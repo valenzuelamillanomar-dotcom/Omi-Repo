@@ -1,0 +1,30 @@
+def calcular_superficie(radio):
+    superficie = 3.6 * (radio * 2) /4
+    return superficie
+
+def rapidez_nave(distancia, tiempo):
+    rapidez = (distancia * 3 / tiempo) + (distancia % 4)
+    return rapidez 
+
+try:
+    radio = int(input("Ingresa el radio de la circunferencia"))
+    distancia = int(input("Ingresa la distancia"))
+    tiempo = int(input("Ingresa el tiempo"))
+    niebla_violeta = (input("entras a la niebla violeta?"))
+    if niebla_violeta == "no":
+        print("la superficie es", calcular_superficie(radio))
+        print("la rapidez de la nave es", rapidez_nave(distancia, tiempo))
+        print("la nave puede aterrizar")
+    else:
+        print("la nave se pierde")
+except ValueError:
+    print("Solo se aceptan si o no")
+
+
+
+
+
+
+
+
+    
