@@ -1,0 +1,38 @@
+print("Para este examen tengo que sacar:\nArea\nVolumen\nLitros\nTiempo que se tarda en llenar la alberca en minutos y horas")
+
+print("cual es el largo de la alberca")
+
+largo = int(input())
+
+print("cual es el ancho de la alberca")
+
+ancho = int(input())
+
+print("cual es la profundidad de la alberca")
+
+profundidad = int(input())
+
+area = (largo * ancho) 
+
+print("El area de una alberca es", area)
+
+volumen = (area * profundidad)
+
+print("El volumen de  la alberca es", volumen)
+
+litros = volumen * 1000
+
+print("El volumen de la alberca en litros es", litros)
+
+print("cuantos litros de agua se bombean por minuto")
+
+bomba = int(input())
+
+agua_bombeada_m = litros / bomba 
+
+print("cuanto tiempo se tarda en llenar la alberca", agua_bombeada_m, "minutos")
+
+agua_bombeada_h = agua_bombeada_m / 60
+
+print("cuanto tiempo se tarda en llenar la alberca", agua_bombeada_h, "horas")
+
